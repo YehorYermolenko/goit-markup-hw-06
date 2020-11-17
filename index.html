@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HomeWork_5</title>
+    <title>HomeWork_6</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -179,11 +179,21 @@
       </div>
     </footer>
       <div  data-modal class="backdrop is-hidden">
-              <div class="modal">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur aliquam doloremque quia? Ratione, necessitatibus tempore quisquam quibusdam natus doloremque unde consequuntur vel provident sed laudantium possimus minima harum ipsum nam?</p>
-                <button class="modal-close-btn" data-modal-close><svg width="30px" height="30px"><use href="./svg/close-modal.svg"></use></svg></button>
-              </div>            
+        <div class="modal">
+          <button class="modal-close-btn" data-modal-close><svg width="30px" height="30px"><use href="./svg/sprite.svg#close-modal"></use></svg></button>
+            <div>
+              <h2 class="modal-header-text">Оставьте свои данные, мы вам перезвоним</h2>
+              <label for="name">Имя</label>
+              <input type="text" class="field" pattern="^[А-Яа-яЁё\s]+$" >
+              <label for="tel">Телефон</label>
+              <input type="tel" class="field" >
+              <label for="email">Почта</label>
+              <input type="email" class="field">
+              <label for="comment">Комментарий</label>
+              <textarea class="comment-field" name="massage" id="massage" cols="30" rows="3"></textarea>
+            </div>
+        </div>            
       </div>
-    <script src="./js/modal.js"></script>
+      <script src="./js/modal.js"></script>
   </body>
 </html>
