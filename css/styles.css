@@ -325,6 +325,10 @@ header ul a:focus {
 
 /* Modal Window Forms */
 
+.modal-form {
+  color: var(--text);
+}
+
 .modal-header-text {
   font-weight: bold;
   font-size: 20px;
@@ -337,7 +341,7 @@ header ul a:focus {
 
 .field {
   width: 100%;
-  line-height: 40px;
+  height: 38px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
@@ -347,12 +351,48 @@ header ul a:focus {
 
 .comment-field {
   width: 100%;
-  line-height: 40px;
+  line-height: 1.4;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-top: 4px;
   margin-bottom: 10px;
   padding: 12px 16px;
+  resize: none;
+  height: 120px;
+}
+
+.modal-checkbox {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.agreement-link {
+  color: var(--logo-web);
+}
+
+.modal-button-div {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.modal-sendform-button {
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background-color: var(--logo-web);
+  border: 0px;
+}
+
+.modal-sendform-buttext {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--white);
+  letter-spacing: 0.06em;
 }
 
 /* Hero section */

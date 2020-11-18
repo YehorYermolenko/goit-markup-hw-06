@@ -181,17 +181,27 @@
       <div  data-modal class="backdrop is-hidden">
         <div class="modal">
           <button class="modal-close-btn" data-modal-close><svg width="30px" height="30px"><use href="./svg/sprite.svg#close-modal"></use></svg></button>
-            <div>
-              <h2 class="modal-header-text">Оставьте свои данные, мы вам перезвоним</h2>
-              <label for="name">Имя</label>
-              <input type="text" class="field" pattern="^[А-Яа-яЁё\s]+$" >
-              <label for="tel">Телефон</label>
-              <input type="tel" class="field" >
-              <label for="email">Почта</label>
-              <input type="email" class="field">
-              <label for="comment">Комментарий</label>
-              <textarea class="comment-field" name="massage" id="massage" cols="30" rows="3"></textarea>
-            </div>
+              <div>
+                <h2 class="modal-header-text">Оставьте свои данные, мы вам перезвоним</h2>
+                  <form action="" class="modal-form">                
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" class="field" pattern="^[А-Яа-яЁё\s]+$" >
+                    <label for="tel">Телефон</label>
+                    <input type="tel" id="tel" class="field" >
+                    <label for="email">Почта</label>
+                    <input type="email" id="email" class="field">
+                    <label for="comment">Комментарий</label>
+                    <textarea class="comment-field" name="massage" id="comment" cols="30" rows="3"></textarea>
+                    <div class="modal-checkbox">
+                      <input type="checkbox" id="agreement" class="modal-checkbox-input">
+                      <label for="agreement">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></label>
+                    </div>
+                    <div class="modal-button-div">
+                      <button type="submit" class="modal-sendform-button"><a class="modal-sendform-buttext">Отправить</a></button>
+                    </div>
+                  </form>
+              </div>
+            
         </div>            
       </div>
       <script src="./js/modal.js"></script>
