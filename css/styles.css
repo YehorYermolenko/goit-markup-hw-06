@@ -332,7 +332,25 @@ header ul a:focus {
 .name-form-icon {
   width: 12px;
   height: 12px;
-  position: relative;
+  position: absolute;
+  top: 106px;
+  left: 56px;
+}
+
+.tel-form-icon {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 173px;
+  left: 56px;
+}
+
+.mail-form-icon {
+  width: 15px;
+  height: 13px;
+  position: absolute;
+  top: 241px;
+  left: 56px;
 }
 
 .modal-header-text {
@@ -355,12 +373,17 @@ header ul a:focus {
   padding: 0px 27px;
 }
 
-.field:hover {
+.field:hover + .modal-icon,
+.field:hover,
+.field:focus + .modal-icon,
+.field:focus {
   border-color: var(--logo-web);
   transition: all 0.5s ease-in;
+  fill: var(--logo-web);
 }
 
-.comment-field:hover {
+.comment-field:hover,
+.comment-field:focus {
   border-color: var(--logo-web);
   transition: all 0.2s ease-in;
 }
@@ -428,6 +451,14 @@ header ul a:focus {
   text-align: center;
   background-color: var(--logo-web);
   border: 0px;
+}
+
+.modal-sendform-button:hover,
+.modal-sendform-button:focus {
+  transition-duration: 250ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal-sendform-buttext {
