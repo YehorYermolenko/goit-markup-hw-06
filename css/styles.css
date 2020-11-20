@@ -329,6 +329,12 @@ header ul a:focus {
   color: var(--text);
 }
 
+.name-form-icon {
+  width: 12px;
+  height: 12px;
+  position: relative;
+}
+
 .modal-header-text {
   font-weight: bold;
   font-size: 20px;
@@ -347,6 +353,16 @@ header ul a:focus {
   margin-top: 4px;
   margin-bottom: 10px;
   padding: 0px 27px;
+}
+
+.field:hover {
+  border-color: var(--logo-web);
+  transition: all 0.5s ease-in;
+}
+
+.comment-field:hover {
+  border-color: var(--logo-web);
+  transition: all 0.2s ease-in;
 }
 
 .comment-field {
@@ -383,11 +399,6 @@ header ul a:focus {
   height: 1px;
   clip: rect(0 0 0 0);
 }
-
-/* .modal-checkbox-input:checked + .checkbox-check {
-  background-color: var(--logo-web);
-  background-image: url(../svg/check.svg);
-} */
 
 .modal-checkbox-input:focus + .checkbox-check {
   outline: 2px green;

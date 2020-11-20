@@ -184,9 +184,12 @@
               <div>
                 <h2 class="modal-header-text">Оставьте свои данные, мы вам перезвоним</h2>
                   <form action="" class="modal-form">                
-                    <label for="name">Имя</label>
-                    <input type="text" id="name" class="field" pattern="^[А-Яа-яЁё\s]+$" >
-                    <label for="tel">Телефон</label>
+                    <div class="name-form">
+                      <label for="name">Имя</label>
+                        <input type="text" id="name" class="field" pattern="^[А-Яа-яЁё\s]+$" >
+                        <svg class="name-form-icon"><use href="./svg/sprite.svg#modal-chel"></use></svg>
+                    </div>
+                      <label for="tel">Телефон</label>
                     <input type="tel" id="tel" class="field" >
                     <label for="email">Почта</label>
                     <input type="email" id="email" class="field">
