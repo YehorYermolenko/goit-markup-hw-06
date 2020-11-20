@@ -373,7 +373,7 @@ header ul a:focus {
   height: 16px;
   border: 2px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-left: -10px;
+  margin-left: -20px;
 }
 
 .modal-checkbox-input {
@@ -384,13 +384,19 @@ header ul a:focus {
   clip: rect(0 0 0 0);
 }
 
-.modal-checkbox-input:checked + .checkbox-check {
+/* .modal-checkbox-input:checked + .checkbox-check {
+  background-color: var(--logo-web);
+  background-image: url(../svg/check.svg);
+} */
+
+.modal-checkbox-input:focus + .checkbox-check {
+  outline: 2px green;
   background-color: var(--logo-web);
   background-image: url(../svg/check.svg);
 }
 
 .agreement {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .agreement-link {
