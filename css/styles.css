@@ -154,10 +154,6 @@ header ul a:focus {
 }
 
 .active-page::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: var(--logo-web);
@@ -894,4 +890,71 @@ element .feature-item {
 .footer-social-links-link:hover,
 .footer-social-links-link:focus {
   background-color: var(--logo-web);
+}
+
+/* Footer Subscribe */
+
+.subscribe-container {
+  margin-left: 93px;
+}
+
+.subscribe-heading {
+  margin-top: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe-form .subscribe-email {
+  display: inline-block;
+  margin-top: 20px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--hero-bckgr);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  color: var(--white);
+}
+
+.subscribe-button {
+  margin-left: 12px;
+  margin-top: 20px;
+  min-width: 200px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--logo-web);
+  border: 0px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.subscribe-button-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+.subscribe-button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../svg/icon-telegram.svg);
 }
