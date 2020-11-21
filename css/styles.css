@@ -312,6 +312,8 @@ header ul a:focus {
   height: 30px;
   width: 30px;
   justify-content: center;
+  cursor: pointer;
+  outline: none;
 }
 
 .modal-close-btn:hover,
@@ -447,6 +449,7 @@ header ul a:focus {
   text-align: center;
   background-color: var(--logo-web);
   border: 0px;
+  cursor: pointer;
 }
 
 .modal-sendform-button:hover,
@@ -933,28 +936,26 @@ element .feature-item {
   min-width: 200px;
   border-radius: 4px;
   text-align: center;
+  align-items: center;
   background-color: var(--logo-web);
   border: 0px;
-  color: var(--white);
+  padding-right: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-button-text {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  color: var(--white);
 }
 
 .subscribe-button-icon {
   width: 24px;
   height: 24px;
   position: absolute;
-}
-
-.subscribe-button::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 24px;
-  height: 24px;
+  fill: var(--white);
+  margin-left: 10px;
   align-items: center;
-  justify-content: center;
-  background-image: url(../svg/icon-telegram.svg);
 }
